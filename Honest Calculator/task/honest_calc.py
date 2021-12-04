@@ -23,5 +23,18 @@ while running:
     if operation not in valid_operations:
         print(msg_2)
         continue
+        # Stage 2/5
+    if operation == "+":
+        print(x + y)
+    elif operation == "-":
+        print(x - y)
+    elif operation == "*":
+        print(x * y)
+    elif operation == "/":
+        if y == 0:
+            print(msg_3)
+            continue
+        else:
+            print(x / y)
 
     running = False
